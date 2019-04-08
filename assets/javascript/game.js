@@ -34,6 +34,12 @@ var blue = Math.floor(Math.random() * 13);
     var crystalValue = ($(this).attr("data-crystalvalue"));
     crystalValue = parseInt(crystalValue);
     counter += crystalValue;
+  
+
+    // $(".crystal-image").on("click", function() {
+    //   var crystalValue = ($(this).attr("data-crystalvalue"));
+    //   crystalValue = parseInt(crystalValue);
+    //   counter += crystalValue;
 
     alert("New score: " + counter);
 
