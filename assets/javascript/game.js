@@ -33,7 +33,8 @@ var crystalValue = this;
 
   $(".crystal-image").on("click", function() {
     var crystalValue = ($(this).attr("data-crystalvalue"));
-    counter = counter += crystalValue;
+    counter = counter + crystalValue;
+    console.log(counter);
     console.log(crystalValue);
 
     // $(".crystal-image").on("click", function () {
