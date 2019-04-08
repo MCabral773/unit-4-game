@@ -1,8 +1,9 @@
 var randomNumber = Math.floor(Math.random() * 100);
 var targetNumber = randomNumber;
-var aqua = Math.floor(Math.random() * 13);
-var red = Math.floor(Math.random() * 13);
+var purple = Math.floor(Math.random() * 13);
+var pink = Math.floor(Math.random() * 13);
 var blue = Math.floor(Math.random() * 13);
+var crystalValue = this;
   $("#number-to-guess").text(randomNumber);
 
   var counter = 0;
@@ -14,12 +15,12 @@ var blue = Math.floor(Math.random() * 13);
     imageCrystal.attr("data-crystalvalue", randomNumber);
   }
 
-    $("#aqua").on("click", function() {
-      alertCrystalPoint(aqua)
+    $("#purple").on("click", function() {
+      alertCrystalPoint(purple)
     })
 
-    $("#red").on("click", function() {
-        alertCrystalPoint(red)
+    $("#pink").on("click", function() {
+        alertCrystalPoint(pink)
     })
 
     $("#blue").on("click", function() {
@@ -32,8 +33,13 @@ var blue = Math.floor(Math.random() * 13);
 
   $(".crystal-image").on("click", function() {
     var crystalValue = ($(this).attr("data-crystalvalue"));
-    counter + crystalValue;
+    counter = counter += crystalValue;
     console.log(crystalValue);
+
+    // $(".crystal-image").on("click", function () {
+		// 	var newScore = score += parseInt($(this).attr("value")); 
+		// 		console.log("New Score: " + newScore); 
+		// 	// $(".scoreDisplay").html(newScore); 
   
 
     // $(".crystal-image").on("click", function() {
